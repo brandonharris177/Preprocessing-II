@@ -1,1 +1,37 @@
-// Navigation Styles here
+.nav {
+    display:flex;
+    flex-flow: row wrap;
+    font-size: 5rem;
+    justify-content: space-between;
+    padding: 2%;
+    padding-left: 18%;
+    padding-right: 19%;
+    border-bottom: 2px dashed darkgrey;
+    font-family: 'Indie Flower', cursive;
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 2%;
+        nav {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+
+    h1 {
+        @media @mobile {
+            margin: 2%;
+        }
+    }
+
+    nav {
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}
