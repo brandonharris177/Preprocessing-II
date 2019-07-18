@@ -3,11 +3,22 @@
     flex-flow: row wrap;
     font-size: 5rem;
     justify-content: space-between;
-    padding: 3%;
     padding-left: 18%;
     padding-right: 18%;
     border-bottom: 2px dashed darkgrey;
     font-family: 'Indie Flower', cursive;
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        nav {
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
     nav {
         a {
             text-decoration: none;
