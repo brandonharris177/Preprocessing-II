@@ -18,8 +18,8 @@
     margin-top: 2%;
     border-bottom: 2px dashed darkgrey;
     @media @mobile {
-      padding-left:5%;
-      padding-right: 5%;
+      margin-left:5%;
+      margin-right: 5%;
     }
   }
 
@@ -57,8 +57,8 @@
     }
 
     @media @mobile {
-      padding-left:5%;
-      padding-right: 5%;
+      margin-left:5%;
+      margin-right: 5%;
     }
   }
 
@@ -103,12 +103,16 @@
     @media @mobile {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 90%;
       justify-content: center;
+      margin-left: 5%;
     }
 
     .btn {
-      .button(darkcyan, white)
+      .button(darkcyan, white);
+      @media @mobile {
+        .button(cadetblue, white);
+      }
     }
 
     .destination {
